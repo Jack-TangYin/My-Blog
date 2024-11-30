@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Details</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  rel="stylesheet"
+/>
+</head>
+<body>
+    <header class="bg-gradient-purple text-white shadow">
+        <h1 class="fw-bold">Blog Details</h1>
+        <button id="dark-mode-toggle" class="btn btn-secondary btn-sm">
+          <i id="dark-mode-icon" class="fas fa-sun"></i>
+        </button>
+      </header>
+
+  <main class="container my-5">
+    <div id="blog-details" class="card shadow-lg p-4 rounded-4">
+      <!-- Blog details will be dynamically loaded -->
+    </div>
+    <div class="mt-5">
+      <h3>Comments</h3>
+      <ul id="comments-list" class="list-group mb-3">
+        <!-- Comments will be dynamically loaded -->
+      </ul>
+      <textarea id="comment-input" class="form-control mb-3" placeholder="Write a comment..."></textarea>
+      <button class="btn btn-primary" onclick="addComment()">Add Comment</button>
+    </div>
+    <div class="text-center mt-5">
+      <a href="index.html" class="btn btn-secondary btn-lg rounded-pill">Back to Homepage</a>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <p class="mb-0">&copy; 2024 My Blog. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
